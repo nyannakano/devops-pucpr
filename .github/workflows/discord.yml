@@ -1,0 +1,14 @@
+name: Discord Webhook
+
+on: [push]
+
+jobs:
+  git:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Discord Webhook
+        uses: johnnyhuy/actions-discord-git-webhook@main
+        with:
+          webhook_url: https://discord.com/api/webhooks/1367102954611412993/NKyTUHTXzSQFQ4-EUAd0WImnvjCe_3FCcPjFpaJtIXNmzz5_S4sQDxGL6AZBWWpnuSYL
